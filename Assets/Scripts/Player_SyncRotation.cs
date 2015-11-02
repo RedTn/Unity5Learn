@@ -16,6 +16,10 @@ public class Player_SyncRotation : NetworkBehaviour {
     [SerializeField]
     private float lerpRate = 15;
 
+    private Quaternion lastPlayerRot;
+    private Quaternion lastCamRot;
+    private float threshold = 5f;
+
     void FixedUpdate()
     {
         TransmitRotations();
@@ -43,7 +47,12 @@ public class Player_SyncRotation : NetworkBehaviour {
     {
         if(isLocalPlayer)
         {
-            CmdProvideRotationsToServer(playerTransform.rotation, camTransform.rotation);
+            if(Quaternion.Angle(playerTransform.rotation, lastPlayerRot) > threshold || Quaternion.Angle(camTransform.rotation, lastCamRot) > threshold)
+            {
+                CmdProvideRotationsToServer(playerTransform.rotation, camTransform.rotation);
+                lastPlayerRot = playerTransform.rotation;
+                lastCamRot = camTransform.rotation;
+            }
         }
     }
 }

@@ -18,7 +18,6 @@ public class Player_NetworkSetup : NetworkBehaviour {
             GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = true;
             FPSChacracterCam.enabled = true;
             audioListener.enabled = true;
-            //this.transform.position = new Vector3(200f, 1f, 200f);
         }
 	}
 	

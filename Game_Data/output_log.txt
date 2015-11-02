@@ -1,4 +1,4 @@
-Initialize engine version: 5.2.0f3 (e7947df39b5c)
+Initialize engine version: 5.2.2f1 (3757309da7e7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
@@ -17,17 +17,17 @@ Loading C:\Users\RED\Documents\LearnUnity5\Game_Data\Managed\UnityEngine.UI.dll 
 Platform assembly: C:\Users\RED\Documents\LearnUnity5\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\RED\Documents\LearnUnity5\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\RED\Documents\LearnUnity5\Game_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.141 seconds
+- Completed reload, in  0.127 seconds
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\RED\Documents\LearnUnity5\Game_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2de8 -> priority: 1 
+  Thread -> id: 3840 -> priority: 1 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.255026 ms
+UnloadTime: 0.306654 ms
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 472.
-Total: 0.462779 ms (FindLiveObjects: 0.023947 ms CreateObjectMapping: 0.012440 ms MarkObjects: 0.318472 ms  DeleteObjects: 0.107919 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 448.
+Total: 0.291414 ms (FindLiveObjects: 0.020215 ms CreateObjectMapping: 0.012129 ms MarkObjects: 0.148350 ms  DeleteObjects: 0.110407 ms)
 
