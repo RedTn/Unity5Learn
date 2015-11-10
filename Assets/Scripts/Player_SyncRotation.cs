@@ -20,10 +20,14 @@ public class Player_SyncRotation : NetworkBehaviour {
     private Quaternion lastCamRot;
     private float threshold = 5f;
 
+    void Update()
+    {
+        LerpRotations();
+    }
+
     void FixedUpdate()
     {
         TransmitRotations();
-        LerpRotations();
     }
 
 	void LerpRotations()
@@ -55,4 +59,5 @@ public class Player_SyncRotation : NetworkBehaviour {
             }
         }
     }
+
 }

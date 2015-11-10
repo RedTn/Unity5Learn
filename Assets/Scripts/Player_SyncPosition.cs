@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
+[NetworkSettings (channel = 0, sendInterval = 0.033f)]
 public class Player_SyncPosition : NetworkBehaviour {
 
     [SyncVar]
@@ -14,10 +16,25 @@ public class Player_SyncPosition : NetworkBehaviour {
     private Vector3 lastPos;
     private float threshold = 0.5f;
 
+    private NetworkClient nClient;
+    private int latency;
+    private Text latencyText;
+
+    void Start()
+    {
+        nClient = GameObject.Find("NetworkManager").GetComponent<NetworkManager>().client;
+        latencyText = GameObject.Find("Latency Text").GetComponent<Text>();
+    }
+
+    void Update()
+    {
+        LerpPosition();
+        ShowLatency();
+    }
+
 	void FixedUpdate()
     {
         TransmitPosition();
-        LerpPosition();
     }
 
     void LerpPosition()
@@ -41,6 +58,15 @@ public class Player_SyncPosition : NetworkBehaviour {
         {
             CmdProvidePositionToServer(myTransform.position);
             lastPos = myTransform.position;
+        }
+    }
+
+    void ShowLatency()
+    {
+        if (isLocalPlayer)
+        {
+            latency = nClient.GetRTT();
+            latencyText.text = latency.ToString();
         }
     }
 }
