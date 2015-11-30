@@ -117,7 +117,7 @@ public class Player_SyncPosition : NetworkBehaviour {
                 lerpRate = normalLerpRate;
             }
 
-            Debug.Log(syncPosList.Count.ToString());
+            //Debug.Log(syncPosList.Count.ToString());
         }
     }
 }
