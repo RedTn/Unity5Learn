@@ -62,7 +62,7 @@ public class Player_SyncRotation : NetworkBehaviour {
                 syncPlayerRotList.RemoveAt(0);
             }
 
-            Debug.Log(syncPlayerRotList.Count.ToString() + " syncPlayerRotList Count");
+            //Debug.Log(syncPlayerRotList.Count.ToString() + " syncPlayerRotList Count");
         }
 
 
@@ -75,7 +75,7 @@ public class Player_SyncRotation : NetworkBehaviour {
                 syncCamRotList.RemoveAt(0);
             }
 
-            Debug.Log(syncCamRotList.Count.ToString() + " syncCamRotList Count");
+            //Debug.Log(syncCamRotList.Count.ToString() + " syncCamRotList Count");
         }
 
     }
