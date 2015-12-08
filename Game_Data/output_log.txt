@@ -17,21 +17,17 @@ Loading C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll 
 Platform assembly: C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.071 seconds
+- Completed reload, in  0.044 seconds
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 12f4 -> priority: 1 
+  Thread -> id: 1468 -> priority: 1 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.300744 ms
+UnloadTime: 0.289237 ms
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 474.
-Total: 0.416750 ms (FindLiveObjects: 0.046340 ms CreateObjectMapping: 0.012129 ms MarkObjects: 0.228279 ms  DeleteObjects: 0.129690 ms)
-
-Untagged
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 480.
+Total: 0.458425 ms (FindLiveObjects: 0.043230 ms CreateObjectMapping: 0.011818 ms MarkObjects: 0.260935 ms  DeleteObjects: 0.141819 ms)
 

@@ -4,7 +4,7 @@ using UnityEngine.Networking;
 
 public class Player_Shoot : NetworkBehaviour {
 
-    private float damage = 25f;
+    private int damage = 25;
     private float range = 200f;
     [SerializeField]
     private Transform camTransform;
@@ -37,7 +37,7 @@ public class Player_Shoot : NetworkBehaviour {
     {
         if(Physics.Raycast(camTransform.TransformPoint(0, 0, 0.5f), camTransform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.tag);
+            //Debug.Log(hit.transform.tag);
 
             if(hit.transform.tag == "Player")
             {
@@ -48,9 +48,10 @@ public class Player_Shoot : NetworkBehaviour {
     }
 
     [Command]
-    void CmdTellServerWhoWasShot(string uniqueID, float dmg)
+    void CmdTellServerWhoWasShot(string uniqueID, int dmg)
     {
         GameObject go = GameObject.Find(uniqueID);
+        go.GetComponent<Player_Health>().DeductHealth(dmg);
         //Apply damage to that player
     }
 
