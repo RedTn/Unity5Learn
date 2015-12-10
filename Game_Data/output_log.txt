@@ -1,4 +1,4 @@
-Initialize engine version: 5.2.3f1 (f3d16a1fa2dd)
+Initialize engine version: 5.3.0f4 (2524e04062b4)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
@@ -6,28 +6,33 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     1969 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.045 seconds
+Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.154 seconds
+Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\RED\Documents\Unity5Learn\Game_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 0.515028 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1c88 -> priority: 1 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.292036 ms
+  Thread -> id: 4fb0 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.235121 ms
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 483.
-Total: 0.419238 ms (FindLiveObjects: 0.052560 ms CreateObjectMapping: 0.012751 ms MarkObjects: 0.235432 ms  DeleteObjects: 0.118182 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 506.
+Total: 0.543952 ms (FindLiveObjects: 0.039186 ms CreateObjectMapping: 0.047273 ms MarkObjects: 0.332156 ms  DeleteObjects: 0.125025 ms)
 
