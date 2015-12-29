@@ -43,6 +43,7 @@ public class Player_Death : NetworkBehaviour {
         {
             GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = false;
             crossHairImage.enabled = false;
+            GameObject.Find("GameManager").GetComponent<GameManager_References>().respawnButton.SetActive(true);
             //Respawn button
         }
     }

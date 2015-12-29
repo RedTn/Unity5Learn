@@ -14,6 +14,9 @@ public class Player_Health : NetworkBehaviour {
     public delegate void DieDelegate();
     public event DieDelegate EventDie;
 
+    public delegate void RespawnDelegate();
+    public event RespawnDelegate EventRespawn;
+
 	// Use this for initialization
 	void Start () {
         healthText = GameObject.Find("Health Text").GetComponent<Text>();
@@ -41,6 +44,16 @@ public class Player_Health : NetworkBehaviour {
 
             shouldDie = false;
         }
+
+        if(health > 0 && isDead)
+        {
+            if(EventRespawn != null)
+            {
+                EventRespawn();
+            }
+
+            isDead = false;
+        }
     }
 
     void SetHealthText()
@@ -60,5 +73,10 @@ public class Player_Health : NetworkBehaviour {
     {
         health = hlth;
         SetHealthText();
+    }
+
+    public void ResetHealth()
+    {
+        health = 100;
     }
 }

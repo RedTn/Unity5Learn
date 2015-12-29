@@ -1,4 +1,4 @@
-Initialize engine version: 5.3.0f4 (2524e04062b4)
+Initialize engine version: 5.3.1f1 (cc9cbbcc37b4)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
@@ -16,23 +16,19 @@ Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\U
 Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.154 seconds
+- Completed reload, in  0.094 seconds
 Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.515028 ms
+UnloadTime: 0.551417 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 4fb0 -> priority: 1 
+  Thread -> id: 1120 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.235121 ms
+UnloadTime: 0.253160 ms
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 506.
-Total: 0.543952 ms (FindLiveObjects: 0.039186 ms CreateObjectMapping: 0.047273 ms MarkObjects: 0.332156 ms  DeleteObjects: 0.125025 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 498.
+Total: 0.355482 ms (FindLiveObjects: 0.021459 ms CreateObjectMapping: 0.012129 ms MarkObjects: 0.219882 ms  DeleteObjects: 0.101388 ms)
 
