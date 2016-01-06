@@ -16,19 +16,13 @@ Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\U
 Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.040 seconds
+- Completed reload, in  0.152 seconds
 Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\RED\Documents\GitHub\Unity5Learn\Game_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.427014 ms
+UnloadTime: 0.487038 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1cc -> priority: 1 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.239787 ms
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 635.
-Total: 0.452827 ms (FindLiveObjects: 0.043541 ms CreateObjectMapping: 0.020215 ms MarkObjects: 0.278352 ms  DeleteObjects: 0.110407 ms)
-
+  Thread -> id: 23e0 -> priority: 1 
