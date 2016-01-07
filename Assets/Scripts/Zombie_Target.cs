@@ -15,12 +15,16 @@ public class Zombie_Target : NetworkBehaviour {
         agent = GetComponent<NavMeshAgent>();
         myTransform = transform;
         raycastLayer = 1 << LayerMask.NameToLayer("Player");
+
+        if(isServer)
+        {
+            StartCoroutine(DoCheck());
+        }
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        SearchForTarget();
-        MoveToTarget();
+
 	}
 
     void SearchForTarget()
@@ -58,5 +62,15 @@ public class Zombie_Target : NetworkBehaviour {
     void SetNavDestination(Transform dest)
     {
         agent.SetDestination(dest.position);
+    }
+
+    IEnumerator DoCheck()
+    {
+        for(;;)
+        {
+            SearchForTarget();
+            MoveToTarget();
+            yield return new WaitForSeconds(0.2f);
+        }
     }
 }

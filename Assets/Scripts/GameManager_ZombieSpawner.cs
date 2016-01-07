@@ -9,7 +9,7 @@ public class GameManager_ZombieSpawner : NetworkBehaviour {
     [SerializeField]
     GameObject zombieSpawn;
     private int counter;
-    private int numberOfZombies = 10;
+    private int numberOfZombies = 50;
 
     public override void OnStartServer()
     {

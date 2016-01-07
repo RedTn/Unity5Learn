@@ -44,6 +44,12 @@ public class Player_Shoot : NetworkBehaviour {
                 string uIdentity = hit.transform.name;
                 CmdTellServerWhoWasShot(uIdentity, damage);
             }
+
+            if (hit.transform.tag == "Zombie")
+            {
+                string uIdentity = hit.transform.name;
+                CmdTellServerWhichZombieWasShot(uIdentity, damage);
+            }
         }
     }
 
@@ -52,7 +58,13 @@ public class Player_Shoot : NetworkBehaviour {
     {
         GameObject go = GameObject.Find(uniqueID);
         go.GetComponent<Player_Health>().DeductHealth(dmg);
-        //Apply damage to that player
+    }
+
+    [Command]
+    void CmdTellServerWhichZombieWasShot(string uniqueID, int dmg)
+    {
+        GameObject go = GameObject.Find(uniqueID);
+        go.GetComponent<Zombie_Health>().DeductHealth(dmg);
     }
 
 }
