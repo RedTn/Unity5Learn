@@ -18,6 +18,8 @@ public class Player_NetworkSetup : NetworkBehaviour {
             GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = true;
             FPSChacracterCam.enabled = true;
             audioListener.enabled = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 	}
 	

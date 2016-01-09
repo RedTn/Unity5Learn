@@ -41,6 +41,8 @@ public class Player_Death : NetworkBehaviour {
 
         if(isLocalPlayer)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = false;
             crossHairImage.enabled = false;
             GameObject.Find("GameManager").GetComponent<GameManager_References>().respawnButton.SetActive(true);

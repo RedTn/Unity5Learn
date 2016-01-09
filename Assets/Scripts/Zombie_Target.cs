@@ -6,7 +6,7 @@ public class Zombie_Target : NetworkBehaviour {
 
     private NavMeshAgent agent;
     private Transform myTransform;
-    private Transform targetTransform;
+    public Transform targetTransform;
     private LayerMask raycastLayer;
     private float radius = 100;
 
