@@ -17,10 +17,15 @@ public class Player_Health : NetworkBehaviour {
     public delegate void RespawnDelegate();
     public event RespawnDelegate EventRespawn;
 
-	// Use this for initialization
-	void Start () {
+    public override void OnStartLocalPlayer()
+    {
         healthText = GameObject.Find("Health Text").GetComponent<Text>();
         SetHealthText();
+    }
+
+    // Use this for initialization
+    void Start () {
+        
 	}
 	
 	// Update is called once per frame

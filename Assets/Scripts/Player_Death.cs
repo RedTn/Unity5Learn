@@ -8,14 +8,24 @@ public class Player_Death : NetworkBehaviour {
     private Player_Health healthScript;
     private Image crossHairImage;
 
-	// Use this for initialization
-	void Start () {
-        crossHairImage = GameObject.Find("Crosshair Image").GetComponent<Image>();
+    public override void PreStartClient()
+    {
         healthScript = GetComponent<Player_Health>();
         healthScript.EventDie += DisablePlayer;
+    }
+
+    // Use this for initialization
+    void Start () {
+        
+        
 	}
 
-    void OnDisable()
+    public override void OnStartLocalPlayer()
+    {
+        crossHairImage = GameObject.Find("Crosshair Image").GetComponent<Image>();
+    }
+
+    public override void OnNetworkDestroy()
     {
         healthScript.EventDie -= DisablePlayer;
     }

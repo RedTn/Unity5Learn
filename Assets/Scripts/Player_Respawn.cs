@@ -10,12 +10,23 @@ public class Player_Respawn : NetworkBehaviour {
     private GameObject respawnButton;
     public Transform myTransform;
 
-	// Use this for initialization
-	void Start () {
+    public override void PreStartClient()
+    {
         healthScript = GetComponent<Player_Health>();
         healthScript.EventRespawn += EnablePlayer;
+    }
+
+
+    public override void OnStartLocalPlayer()
+    {
         crossHairImage = GameObject.Find("Crosshair Image").GetComponent<Image>();
         SetRespawnButton();
+    }
+
+    // Use this for initialization
+    void Start () {
+        
+        
 	}
 
     void SetRespawnButton ()
@@ -28,7 +39,7 @@ public class Player_Respawn : NetworkBehaviour {
         }
     }
 
-    void OnDisable()
+    public override void OnNetworkDestroy()
     {
         healthScript.EventRespawn -= EnablePlayer;
     }
